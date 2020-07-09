@@ -11,7 +11,7 @@ public class launchApp {
 
 	@BeforeClass
 	public void createChromeDriver() {
-		System.setProperty("webdriver.chrome.driver", "E:\\chromedriversetup\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "src\\chromebrowser\\chromedriver.exe");
 		driver =new ChromeDriver();
 	}
 	
