@@ -2,6 +2,7 @@ package chromebrowser;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -18,7 +19,8 @@ public class launchApp {
 	@Test
 	public void openBrowser() {
 		driver.get("http://www.google.com");
-		System.out.println("Title is" +driver.getTitle());
+		String title =driver.getTitle();
+		Assert.assertEquals(title, "Google");
 		
 	}
 	
