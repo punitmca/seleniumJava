@@ -21,6 +21,7 @@ public class launchApp {
 		driver.get("http://www.google.com");
 		String title =driver.getTitle();
 		Assert.assertEquals(title, "Google");
+		Assert.assertEquals(title, "Google");
 		
 	}
 	
